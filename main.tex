@@ -1,0 +1,88 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\title{training-2018-06-j-g9-combinatorics}
+
+% Конфигурация — общее {{{1
+
+\usepackage{multicol}
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+
+\usepackage{jeolm}
+\usepackage{jeolm-groups}
+
+\usepackage[T2A]{fontenc}
+\usepackage{anyfontsize}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{upgreek}
+\AtBeginDocument{\swapvar{phi}\swapvar{epsilon}}
+\AtBeginDocument{\swapvar[up]{phi}\swapvar[up]{epsilon}}
+\AtBeginDocument{\let\geq\geqslant\let\leq\leqslant}
+\usepackage[russian]{babel}
+\usepackage{parskip}
+\pagestyle{empty}
+
+% Конфигурация — страницы {{{1
+
+\usepackage{geometry}
+% Размер «логической» страницы
+\geometry{a5paper,portrait,vmargin={2em,2em},hmargin={2em,2em}}
+%\geometry{a6paper,landscape,vmargin={1.5em,1.5em},hmargin={1.5em,1.5em}}
+
+\usepackage{pgfpages}
+% Размещение «логических» страниц на «физической»
+\pgfpagesuselayout{resize to}[a4paper]
+%\pgfpagesuselayout{2 on 1}[a4paper,landscape]
+%\pgfpagesuselayout{4 on 1}[a4paper,landscape]
+
+% Конфигурация — локальное {{{1
+
+\renewcommand\jeolminstitution
+  {Московские сборы по математике}
+\renewcommand\jeolmdaterange
+  {1--14 июня 2018\,г.}
+
+% Конфигурация — размер шрифта {{{1
+
+% Уменьшить основной размер шрифта
+%\AtBeginDocument{\fontsize{9.00}{10.80}\selectfont}
+% (по умолчанию 10.00 и 12.00 соответственно)
+
+% }}}1
+
+
+\begin{document}
+
+\clearpage\input{source/geometry/2018-06-09-Pascal.tex}
+
+\end{document}
+
+% Архив {{{1
+
+\clearpage\input{source/combinatorics/01-oriented-graphs-r1.tex}
+\clearpage\input{source/combinatorics/02-oriented-graphs-r2.tex}
+\clearpage\input{source/combinatorics/01-oriented-graphs-r3.tex}
+\clearpage
+\input{source/combinatorics/02-oriented-graphs-addition-r3.tex}\vfill
+\input{source/combinatorics/02-oriented-graphs-addition-r3.tex}\vfill
+
+\clearpage\input{source/combinatorics/04-variation-r1.tex}
+\clearpage\input{source/combinatorics/03-variation-r2.tex}
+\clearpage\input{source/combinatorics/03-variation-r3.tex}
+
+\clearpage\input{source/combinatorics/05-infinity-r1.tex}
+\clearpage\input{source/combinatorics/05-infinity-r2.tex}
+\clearpage\input{source/combinatorics/07-infinity-r3.tex}
+
+\clearpage\input{source/combinatorics/08-addition-r1.tex}\vfill
+\input{source/combinatorics/08-addition-r1.tex}\vfill
+
+\clearpage\input{source/combinatorics/09-lattices-r1.tex}
+\clearpage\input{source/combinatorics/09-lattices-r2.tex}
+
+\clearpage\input{source/geometry/2018-06-09-Pascal.tex}
+
+% }}}1
+
+% vim: set foldmethod=marker :%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
